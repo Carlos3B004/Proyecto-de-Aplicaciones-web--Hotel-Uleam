@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesión - Hotel ULEAM</title>
+  <link rel="stylesheet" href="../css/estilos.css"> 
+  <link rel="stylesheet" href="../css/login.css">    
+</head>
+<body>
+
+  <header>
+    <h1>Iniciar Sesión</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenedor-login">
+    <form id="formLogin">
+      <h2>Accede a tu cuenta</h2>
+
+      <label for="correoLogin">Correo electrónico:
+        <input type="email" id="correoLogin" placeholder="ejemplo@correo.com" required>
+      </label>
+
+      <label for="contrasenaLogin">Contraseña:
+        <input type="password" id="contrasenaLogin" placeholder="Tu contraseña" required>
+      </label>
+
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+
+    <p id="mensajeLogin"></p>
+  </main>
+
+  <script src="../js/funciones.js"></script>
+</body>
+</html>

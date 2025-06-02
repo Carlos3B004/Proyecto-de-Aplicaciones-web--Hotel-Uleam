@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Panel de Usuario - Hotel ULEAM</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="stylesheet" href="../css/panel.css" />
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a nuestro Hotel</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reservas.html">Reservar</a></li>
+        <li><a href="facturacion.html">Facturación</a></li>
+        <li><a href="login.html" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section class="bienvenida">
+    <h2 id="saludo"></h2>
+    <p>Desde aquí puedes acceder a las funciones principales del sistema.</p>
+    <img src="../img/hotel.jpg" alt="Habitación del hotel" class="imagen-panel">
+  </section>
+</main>
+
+  <script>
+    const usuarioActivo = JSON.parse(localStorage.getItem("usuarioActivo"));
+    if (usuarioActivo) {
+      document.getElementById("saludo").textContent = "Hola, " + usuarioActivo.nombre;
+    } else {
+      window.location.href = "login.html"; // Redirigir si no hay sesión activa
+    }
+
+    function cerrarSesion() {
+      localStorage.removeItem("usuarioActivo");
+    }
+  </script>
+</body>
+</html>

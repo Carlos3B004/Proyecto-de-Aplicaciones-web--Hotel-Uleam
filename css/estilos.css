@@ -1,0 +1,64 @@
+/* Estilo general del cuerpo de la página  */
+body {
+  font-family: Arial, sans-serif;       
+  margin: 0;                            
+  padding: 0;                           
+  background-color: #f4f4f4;           
+}
+
+/* Encabezado principal del sitio */
+header {
+  background-color: #003366;           
+  color: white;                        
+  padding: 1em;                        
+  text-align: center;                  
+}
+
+/* Lista de navegación   */
+nav ul {
+  list-style: none;                     
+  padding: 0;                          
+}
+
+/* Elementos del menú de navegación en línea */
+nav ul li {
+  display: inline;                      
+  margin: 0 10px;                       
+}
+
+/* Estilo de los enlaces del menú */
+nav ul li a {
+  color: white;                        
+  text-decoration: none;                
+}
+
+/* Sección principal del contenido */
+main {
+  padding: 2em;                        
+  text-align: center;             
+}
+
+/* Estilo del formulario */
+form {
+  background-color: white;             
+  padding: 1em;                         
+  display: inline-block;              
+  border-radius: 5px;                   
+  box-shadow: 0 0 10px gray;            
+}
+
+/* Estilo de los botones personalizados  */
+.boton {
+  display: inline-block;                
+  padding: 10px 20px;                   
+  background-color: #0055aa;           
+  color: white;                        
+  text-decoration: none;               
+  border-radius: 5px;                   
+  margin: 5px;                          
+}
+
+/* Estilo al pasar el mouse por los botones  */
+.boton:hover {
+  background-color: #003366;            
+}

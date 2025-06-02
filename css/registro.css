@@ -1,0 +1,88 @@
+/* Contenedor general del formulario de registro */
+.contenedor-registro {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  min-height: 75vh;   
+}
+
+/* Estilos del formulario */
+form {
+  background: #fff; 
+  padding: 2.2em; 
+  border-radius: 6px; 
+  box-shadow: 0 0 12px rgba(0, 0, 0, .1); 
+  width: 340px; 
+  text-align: left;
+}
+
+/* Título dentro del formulario */
+form h2 {
+  margin-bottom: 1.2em; 
+  color: #003366; 
+  font-size: 1.25rem; 
+  text-align: center; 
+}
+
+/* Etiquetas de los campos del formulario */
+form label {
+  display: block; 
+  margin-bottom: 1em; 
+  font-size: .95rem; 
+  color: #333; /
+}
+
+/* Campos de entrada del formulario */
+form input {
+  width: 100%; 
+  padding: 8px; 
+  margin-top: 4px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: .95rem; 
+}
+
+/* Contenedor de los botones */
+.botones {
+  display: flex; 
+  gap: 12px; 
+  margin-top: 12px; 
+}
+
+/* Estilos generales para todos los botones */
+.btn {
+  flex: 1; 
+  padding: 10px; 
+  font-size: 1rem; 
+  font-weight: bold; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+/* Botón principal (ej. Registrar) */
+.primario {
+  background: #0055aa; 
+  color: #fff; 
+}
+.primario:hover {
+  opacity: .85; /* Ligera opacidad al pasar el mouse */
+}
+
+/* Botón secundario (ej. Cancelar) */
+.secundario {
+  background: #d0d0d0; 
+  color: #000; 
+}
+.secundario:hover {
+  opacity: .85; /* Ligera opacidad al pasar el mouse */
+}
+
+/* Mensaje de confirmación o error */
+#mensaje {
+  margin-top: 15px; 
+  font-weight: bold; 
+  color: rgb(0, 0, 0); 
+  font-size: .9rem; 
+  text-align: center; 
+}

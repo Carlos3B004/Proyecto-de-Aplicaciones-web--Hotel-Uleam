@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Facturación - Hotel ULEAM</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="stylesheet" href="../css/facturacion.css" />
+</head>
+<body>
+  <header>
+    <h1>Generar Factura</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="habitaciones.html">Habitaciones</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="formFactura">
+      <label for="docBuscar">Documento de identidad:</label>
+      <input type="text" id="docBuscar" required />
+      <button type="submit">Buscar Reserva</button>
+    </form>
+
+    <section id="datosFactura" style="display:none;">
+      <h2>Factura del Cliente</h2>
+      <p><strong>Nombre:</strong> <span id="nombreFactura"></span></p>
+      <p><strong>Correo:</strong> <span id="correoFactura"></span></p>
+      <p><strong>Fechas:</strong> <span id="fechasFactura"></span></p>
+      <p><strong>Tipo de Habitación:</strong> <span id="tipoFactura"></span></p>
+      <p><strong>Precio por noche:</strong> $<span id="precioNoche"></span></p>
+      <p><strong>Días de estadía:</strong> <span id="diasEstadia"></span></p>
+      <p><strong>Subtotal:</strong> $<span id="subtotal"></span></p>
+      <p><strong>Impuestos (12%):</strong> $<span id="impuestos"></span></p>
+      <p><strong>Total a pagar:</strong> $<span id="total"></span></p>
+
+      <button onclick="generarFactura()">Generar Factura</button>
+    </section>
+
+    <p id="mensajeFactura"></p>
+  </main>
+
+  <script src="../js/funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Estilo para las etiquetas del formulario */
+form label {
+  display: block; 
+  margin-bottom: 5px; 
+  font-weight: bold; 
+  color: #003366; 
+  text-align: left; 
+}
+
+/* Estilo para el formulario */
+form {
+  max-width: 400px; 
+  width: 500%;     
+  margin: 0 auto;   
+  box-sizing: border-box;  
+}
+
+/* Estilo para los campos de entrada y select */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="number"],
+form select {
+  width: 100%; 
+  padding: 8px 10px; 
+  margin-bottom: 1.2rem; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  font-size: 1rem; 
+  transition: border-color 0.3s ease; 
+}
+
+/* Estilo base para los botones */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px; 
+  border: none; 
+  cursor: pointer; 
+  font-weight: bold; 
+  font-size: 1rem; 
+}
+
+/* Botón primario (ej. guardar reserva) */
+.btn-primario {
+  background-color: #0055aa; 
+  color: white; 
+}
+
+.btn-primario:hover {
+  background-color: #003366; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Botón secundario (ej. cancelar) */
+.btn-secundario {
+  background-color: #ccc; 
+  color: #333; 
+}
+
+.btn-secundario:hover {
+  background-color: #999; /* Gris más oscuro al pasar el mouse */
+}
+
+/* Estilo para el mensaje de confirmación */
+#mensajeReserva {
+  margin-top: 1rem; 
+  font-weight: bold; 
+  color: #000000; 
+  text-align: center; 
+}
+
+

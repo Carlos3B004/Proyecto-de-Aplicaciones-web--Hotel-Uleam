@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Habitaciones - Hotel ULEAM</title>
+  <link rel="stylesheet" href="../css/estilos.css">      
+  <link rel="stylesheet" href="../css/habitaciones.css"> 
+</head>
+<body>
+
+  <header>
+    <h1>Gestión de Habitaciones</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="aprobaciones.html">Aprobaciones</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenedor-habitaciones">
+
+    <!-- Formulario de registro/edición -->
+    <section class="formulario">
+      <h2 id="tituloForm">Agregar nueva habitación</h2>
+
+      <form id="formHabitacion">
+        <label for="numeroHab">Número
+          <input type="text" id="numeroHab" required>
+        </label>
+
+        <label for="tipoHab">Tipo
+          <select id="tipoHab" required>
+            <option value="">Seleccione</option>
+            <option>Individual</option>
+            <option>Doble</option>
+            <option>Suite</option>
+          </select>
+        </label>
+
+        <label for="estadoHab">Estado
+          <select id="estadoHab" required>
+            <option>Disponible</option>
+            <option>Ocupada</option>
+            <option>Mantenimiento</option>
+          </select>
+        </label>
+
+        <label for="precioHab">Precio por noche ($)
+          <input type="number" id="precioHab" min="0" required>
+        </label>
+
+        <!-- Oculto para modo edición -->
+        <input type="hidden" id="indiceEdit" value="-1">
+
+        <div class="botones">
+          <button type="submit" id="btnGuardar" class="btn primario">Guardar</button>
+          <button type="reset" id="btnCancelar" class="btn secundario">Cancelar</button>
+        </div>
+      </form>
+
+      <p id="mensajeHab"></p>
+    </section>
+
+    <!-- Tabla de habitaciones -->
+    <section class="tabla">
+      <h2>Lista de habitaciones</h2>
+      <table id="tablaHabitaciones">
+        <thead>
+          <tr>
+            <th>Número</th>
+            <th>Tipo</th>
+            <th>Estado</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <script src="../js/funciones.js"></script>
+</body>
+</html>

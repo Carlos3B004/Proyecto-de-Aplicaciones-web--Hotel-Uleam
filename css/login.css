@@ -1,0 +1,69 @@
+/* Contenedor principal del login centrado vertical y horizontalmente */
+.contenedor-login {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  min-height: 70vh; 
+  flex-direction: column; 
+}
+
+/* Estilo del cuadro del formulario */
+form {
+  background-color: white; 
+  padding: 2em; 
+  border-radius: 6px; 
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1); 
+  width: 320px; 
+}
+
+/* Título del formulario */
+form h2 {
+  margin-bottom: 1em; 
+  color: #003366; 
+  font-size: 1.2rem; 
+}
+
+/* Etiquetas del formulario */
+form label {
+  display: block; 
+  margin-bottom: 1em; 
+  text-align: left; 
+  font-size: 0.95rem; 
+  color: #333; 
+}
+
+/* Campos de forma del formulario */
+form input {
+  width: 100%; 
+  padding: 8px; 
+  margin-top: 4px; 
+  border: 1px solid #0c0404; 
+  border-radius: 4px; 
+  font-size: 0.95rem; 
+}
+
+/* Botón del formulario */
+form button {
+  width: 100%; 
+  background-color: #0055aa; 
+  color: white; 
+  border: none; 
+  padding: 10px; 
+  font-size: 1rem; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; /
+}
+
+/* Estilo del botón al pasar el mouse */
+form button:hover {
+  background-color: #003366; 
+}
+
+/* Mensaje de error al intentar iniciar sesión */
+#mensajeLogin {
+  margin-top: 15px; 
+  font-weight: bold; 
+  color: rgb(29, 28, 28); 
+  font-size: 0.9rem; 
+}

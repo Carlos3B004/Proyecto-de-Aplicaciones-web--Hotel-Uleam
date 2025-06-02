@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Cliente - Hotel ULEAM</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <!-- CSS exclusivo para esta página -->
+  <link rel="stylesheet" href="../css/registro.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Registro de Cliente</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="login.html">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="contenedor-registro">
+    <form id="formRegistro">
+      <h2>Crea tu cuenta</h2>
+
+      <label for="nombre">Nombre
+        <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+      </label>
+
+      <label for="correo">Correo electrónico
+        <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+      </label>
+
+      <label for="telefono">Teléfono
+        <input type="text" id="telefono" placeholder="+593 ..." required>
+      </label>
+
+      <label for="documento">Documento de identidad
+        <input type="text" id="documento" placeholder="Cédula o pasaporte" required>
+      </label>
+
+      <label for="contrasena">Contraseña
+        <input type="password" id="contrasena" placeholder="Mínimo 6 caracteres" required>
+      </label>
+
+      <div class="botones">
+        <button type="submit" class="btn primario">Registrarse</button>
+        <button type="reset"  class="btn secundario">Cancelar</button>
+      </div>
+    </form>
+
+    <p id="mensaje"></p>
+  </main>
+
+  <script src="../js/funciones.js"></script>
+</body>
+</html>

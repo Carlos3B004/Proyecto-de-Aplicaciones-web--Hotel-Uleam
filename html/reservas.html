@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reservar Habitación - Hotel ULEAM</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="stylesheet" href="../css/reservas.css" />
+</head>
+<body>
+  <header>
+    <h1>Reservar Habitación</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="login.html">Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="formReserva">
+      <label for="nombreReserva">Nombre:</label>
+      <input type="text" id="nombreReserva" required />
+
+      <label for="correoReserva">Correo electrónico:</label>
+      <input type="email" id="correoReserva" required />
+
+      <label for="telefonoReserva">Teléfono:</label>
+      <input type="text" id="telefonoReserva" required />
+
+      <label for="documentoReserva">Documento de identidad:</label>
+      <input type="text" id="documentoReserva" required />
+
+      <label for="fechaEntrada">Fecha de entrada:</label>
+      <input type="date" id="fechaEntrada" required />
+
+      <label for="fechaSalida">Fecha de salida:</label>
+      <input type="date" id="fechaSalida" required />
+
+      <label for="tipoHabitacion">Tipo de habitación:</label>
+      <select id="tipoHabitacion" required>
+        <option value="">Seleccione</option>
+        <option value="Individual">Individual</option>
+        <option value="Doble">Doble</option>
+        <option value="Suite">Suite</option>
+      </select>
+
+      <label for="personas">Número de personas:</label>
+      <input type="number" id="personas" min="1" required />
+
+      <div class="botones-form">
+        <button type="submit" class="btn btn-primario">Reservar</button>
+        <button type="reset" class="btn btn-secundario">Cancelar</button>
+      </div>
+    </form>
+    <p id="mensajeReserva"></p>
+  </main>
+
+  <script src="../js/funciones.js"></script>
+</body>
+</html>
