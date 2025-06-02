@@ -3,7 +3,7 @@
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  min-height: 75vh;   
+  min-height: 50vh;   
 }
 
 /* Estilos del formulario */
@@ -80,9 +80,24 @@ form input {
 
 /* Mensaje de confirmación o error */
 #mensaje {
-  margin-top: 15px; 
+  margin-top: 10px; 
   font-weight: bold; 
   color: rgb(0, 0, 0); 
   font-size: .9rem; 
   text-align: center; 
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Opcional para centrar el mensaje */
+#mensaje {
+  margin-top: 15px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: .9rem;
+  text-align: center;
 }
