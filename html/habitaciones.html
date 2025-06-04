@@ -20,16 +20,13 @@
   </header>
 
   <main class="contenedor-habitaciones">
-
-    <!-- Formulario de registro/edición -->
+   
     <section class="formulario">
       <h2 id="tituloForm">Agregar nueva habitación</h2>
-
       <form id="formHabitacion">
         <label for="numeroHab">Número
           <input type="text" id="numeroHab" required>
         </label>
-
         <label for="tipoHab">Tipo
           <select id="tipoHab" required>
             <option value="">Seleccione</option>
@@ -51,9 +48,9 @@
           <input type="number" id="precioHab" min="0" required>
         </label>
 
-        <!-- Oculto para modo edición -->
-        <input type="hidden" id="indiceEdit" value="-1">
 
+        <input type="hidden" id="indiceEdit" value="-1">
+        
         <div class="botones">
           <button type="submit" id="btnGuardar" class="btn primario">Guardar</button>
           <button type="reset" id="btnCancelar" class="btn secundario">Cancelar</button>
@@ -63,7 +60,6 @@
       <p id="mensajeHab"></p>
     </section>
 
-    <!-- Tabla de habitaciones -->
     <section class="tabla">
       <h2>Lista de habitaciones</h2>
       <table id="tablaHabitaciones">
